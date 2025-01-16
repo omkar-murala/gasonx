@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import Slidebar from "@/app/components/Slidebar/Slidebar";
@@ -36,7 +37,7 @@ const LineChart = () => {
         label: "Teal Line",
         data: [3000, 4000, 2500, 6000, 8000, 7000, 9000],
         borderColor: "#36d7b7", // Teal color
-        backgroundColor: (context) => {
+        backgroundColor: (context: { chart: { ctx: any; }; }) => {
           const ctx = context.chart.ctx;
           const gradient = ctx.createLinearGradient(0, 0, 0, 400);
           gradient.addColorStop(0, "rgba(54, 215, 183, 0.4)");
