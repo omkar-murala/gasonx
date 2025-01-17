@@ -18,10 +18,6 @@ const BlankPage: NextPage = () => {
           </h2>
         </div>
 <div className="relative w-[450px] h-[550px] bg-[#5F8F80]/75 rounded-lg p-8 shadow-lg translate-x-[450px] z-10">
-
- 
-
-
   {/* Card Content */}
   <h1 className="text-center mb-4">
     <span className="text-white text-base font-normal">Welcome back to the</span> <br />
@@ -81,11 +77,8 @@ const BlankPage: NextPage = () => {
     <a href="#" className="text-white underline">
       SIGN UP
     </a>
-  </p>
-  
+  </p>  
 </div>
-
-
 
 {/* Image in the Background */}
 <div className="absolute mb-60 right-[1rem] z-0">
@@ -136,5 +129,3 @@ const BlankPage: NextPage = () => {
 };
 
 export default BlankPage;
-
-
